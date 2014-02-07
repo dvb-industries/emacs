@@ -7,5 +7,5 @@ execute "update apt" do
 end
 
 execute "install emacs" do
-  command "apt-get install emacs24"
+  command "apt-get -y install emacs24"
 end
