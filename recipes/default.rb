@@ -11,7 +11,7 @@ execute "install emacs" do
 end
 
 git "~/.emacs.d" do
-  repository "git@github.com:dvb-industries/.emacs.d.git"
+  repository "https://github.com/dvb-industries/.emacs.d.git"
   user "dvberkel"
   group "dvberkel"
 end
