@@ -10,8 +10,8 @@ execute "install emacs" do
   command "apt-get -y install emacs24"
 end
 
-git "/home/dvberkel/.emacs.d" do
-  repository "https://github.com/dvb-industries/.emacs.d.git"
-  user "dvberkel"
-  group "dvberkel"
+git node[:emacsd][:location] do
+  repository node[:emacsd][:repository]
+  user node[:emacsd][:user]
+  group node[:emacsd][:group]
 end
